@@ -118,14 +118,9 @@ namespace Lesson2
 
         public static int PrintSum(int start, int end)
         {
-            if (start == end)
-            {
-                return end;
-            }
-            else
-            {
-                return PrintSum(start + 1, end) + start;
-            }
+            return start == end
+                ? end
+                : PrintSum(start + 1, end) + start;
         }
     }
 
