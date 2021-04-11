@@ -15,7 +15,7 @@ namespace Lesson7
         {
             InitializeComponent();
 
-            this.Text = "Удвоитель";
+            this.Text = "Doubler";
             btnCommand1.Text = "+1";
             btnCommand2.Text = "x2";
             btnReset.Text = "Reset";
@@ -23,6 +23,14 @@ namespace Lesson7
             lblCountCommands.Text = "0";
 
             pnlGame.Visible = false;
+        }
+
+        private void btnPlayGame_Click(object sender, EventArgs e)
+        {
+            btnPlayGame.Enabled = false;
+            pnlGame.Visible = true;
+            goal = new Random().Next(20, 100);
+            ResetGame();
         }
 
         private void btnCommand1_Click(object sender, EventArgs e)
@@ -52,14 +60,6 @@ namespace Lesson7
                 PrintValue();
                 PrintCountCommands();
             }
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            btnPlayGame.Enabled = false;
-            pnlGame.Visible = true;
-            goal = new Random().Next(20, 100);
-            ResetGame();
         }
 
         private void MakeStep()

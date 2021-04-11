@@ -107,12 +107,12 @@ namespace Lesson7
             // 
             // lblGoal
             // 
-            this.lblGoal.AutoSize = true;
-            this.lblGoal.Location = new System.Drawing.Point(67, 7);
+            this.lblGoal.Location = new System.Drawing.Point(9, 7);
             this.lblGoal.Name = "lblGoal";
-            this.lblGoal.Size = new System.Drawing.Size(38, 15);
+            this.lblGoal.Size = new System.Drawing.Size(156, 15);
             this.lblGoal.TabIndex = 8;
             this.lblGoal.Text = "label1";
+            this.lblGoal.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // btnCancel
             // 
@@ -132,7 +132,7 @@ namespace Lesson7
             this.btnPlayGame.TabIndex = 1;
             this.btnPlayGame.Text = "PLAY GAME";
             this.btnPlayGame.UseVisualStyleBackColor = true;
-            this.btnPlayGame.Click += new System.EventHandler(this.button1_Click);
+            this.btnPlayGame.Click += new System.EventHandler(this.btnPlayGame_Click);
             // 
             // Form1
             // 
@@ -149,7 +149,6 @@ namespace Lesson7
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Удвоитель";
             this.pnlGame.ResumeLayout(false);
-            this.pnlGame.PerformLayout();
             this.ResumeLayout(false);
 
         }
